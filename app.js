@@ -59,6 +59,7 @@ app.get("/search/:movieName", (req, res) => {
           break;
         }
       }
+      res.render("pages/searchResult", {movieTitle: "Error", movieDesc: "Movie title does not exist"})
       
     }
   })
